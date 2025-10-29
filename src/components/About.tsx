@@ -15,7 +15,7 @@ export const About = () => {
             About Me
           </h2>
           
-          <Card className="glass p-8 md:p-12 glow-cyan">
+          <Card className="glass p-8 md:p-12 glow-purple">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I'm a passionate web developer specializing in creating beautiful, 

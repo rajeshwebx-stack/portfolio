@@ -59,7 +59,7 @@ export const Skills = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
               >
-                <Card className="glass p-6 h-full hover:glow-blue transition-all duration-300">
+                <Card className="glass p-6 h-full hover:glow-purple hover:scale-105 transition-all duration-300">
                   <div className="flex flex-col items-center text-center space-y-4">
                     <div className="p-4 rounded-full bg-accent/10">
                       <skill.icon className="w-8 h-8 text-accent" />

@@ -37,7 +37,7 @@ export const Hero = () => {
           >
             <Button 
               size="lg" 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground glow-cyan"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground glow-purple hover:scale-105 transition-transform"
               asChild
             >
               <a href="#projects">View Work</a>

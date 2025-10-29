@@ -27,7 +27,7 @@ export const Contact = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="glass p-8 glow-cyan">
+            <Card className="glass p-8 glow-purple">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>

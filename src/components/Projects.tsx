@@ -58,7 +58,7 @@ export const Projects = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
               >
-                <Card className="glass p-6 h-full hover:glow-cyan transition-all duration-300">
+                <Card className="glass p-6 h-full hover:glow-purple hover:scale-105 transition-all duration-300">
                   <div className="space-y-4">
                     <h3 className="text-2xl font-semibold">{project.title}</h3>
                     <p className="text-muted-foreground">{project.description}</p>
