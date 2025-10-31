@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import profileImage from '@/assets/profile.png';
 
 export const Hero = () => {
   return (
@@ -71,7 +72,7 @@ export const Hero = () => {
               transition={{ duration: 0.8, delay: 0.7 }}
             >
               <a 
-                href="https://github.com" 
+                href="https://github.com/rajshub00" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition-colors"
@@ -79,7 +80,7 @@ export const Hero = () => {
                 <Github className="w-6 h-6" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/rajesh-a-521bb2337/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition-colors"
@@ -87,7 +88,7 @@ export const Hero = () => {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a 
-                href="mailto:hello@example.com"
+                href="mailto:rajeshwebx@gmail.com"
                 className="text-muted-foreground hover:text-accent transition-colors"
               >
                 <Mail className="w-6 h-6" />
@@ -109,11 +110,11 @@ export const Hero = () => {
               
               {/* Main Image Container */}
               <div className="relative glass rounded-2xl overflow-hidden h-full flex items-center justify-center backdrop-blur-xl">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent to-accent-secondary opacity-20" />
-                  <p className="text-muted-foreground text-sm">Profile Photo</p>
-                  <p className="text-muted-foreground text-xs mt-2">Image Placeholder</p>
-                </div>
+                <img 
+                  src={profileImage} 
+                  alt="Rajesh - Software Developer" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </motion.div>

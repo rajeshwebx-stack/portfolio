@@ -4,7 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
+import profileImage from '@/assets/profile.png';
 
 export const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -68,6 +69,7 @@ export const Contact = () => {
             </Card>
 
             <div className="space-y-6">
+              {/* Profile Picture */}
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -75,18 +77,21 @@ export const Contact = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <Card className="glass p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="p-3 rounded-full bg-accent/10">
-                      <Mail className="w-6 h-6 text-accent" />
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-32 h-32 rounded-full overflow-hidden mb-4 ring-2 ring-accent/20">
+                      <img 
+                        src={profileImage} 
+                        alt="Rajesh - Software Developer" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-muted-foreground">hello@example.com</p>
-                    </div>
+                    <h3 className="font-semibold text-lg mb-2">Rajesh</h3>
+                    <p className="text-muted-foreground text-sm">Software Developer</p>
                   </div>
                 </Card>
               </motion.div>
 
+              {/* Email */}
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -96,16 +101,22 @@ export const Contact = () => {
                 <Card className="glass p-6">
                   <div className="flex items-start space-x-4">
                     <div className="p-3 rounded-full bg-accent/10">
-                      <Phone className="w-6 h-6 text-accent" />
+                      <Mail className="w-6 h-6 text-accent" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <h3 className="font-semibold mb-1">Email</h3>
+                      <a 
+                        href="mailto:rajeshwebx@gmail.com"
+                        className="text-muted-foreground hover:text-accent transition-colors"
+                      >
+                        rajeshwebx@gmail.com
+                      </a>
                     </div>
                   </div>
                 </Card>
               </motion.div>
 
+              {/* LinkedIn */}
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -115,11 +126,45 @@ export const Contact = () => {
                 <Card className="glass p-6">
                   <div className="flex items-start space-x-4">
                     <div className="p-3 rounded-full bg-accent/10">
-                      <MapPin className="w-6 h-6 text-accent" />
+                      <Linkedin className="w-6 h-6 text-accent" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">Location</h3>
-                      <p className="text-muted-foreground">San Francisco, CA</p>
+                      <h3 className="font-semibold mb-1">LinkedIn</h3>
+                      <a 
+                        href="https://www.linkedin.com/in/rajesh-a-521bb2337/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-accent transition-colors"
+                      >
+                        linkedin.com/in/rajesh-a
+                      </a>
+                    </div>
+                  </div>
+                </Card>
+              </motion.div>
+
+              {/* GitHub */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+              >
+                <Card className="glass p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="p-3 rounded-full bg-accent/10">
+                      <Github className="w-6 h-6 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-1">GitHub</h3>
+                      <a 
+                        href="https://github.com/rajshub00"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-accent transition-colors"
+                      >
+                        github.com/rajshub00
+                      </a>
                     </div>
                   </div>
                 </Card>
