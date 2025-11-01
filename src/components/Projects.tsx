@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
+import professionalPhoto from '@/assets/professional-photo.jpg';
 
 const projects = [
   {
@@ -9,6 +10,7 @@ const projects = [
     description: 'A fully functional e-commerce store clone with modern UI and seamless shopping experience.',
     tech: ['React', 'CSS', 'JavaScript'],
     link: 'https://xo-store-clone.netlify.app/',
+    image: professionalPhoto,
   },
   {
     title: 'BMI Calculator',
@@ -42,8 +44,17 @@ export const Projects = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
               >
-                <Card className="glass p-6 h-full hover:glow-white hover:scale-105 transition-all duration-300 border-white/20">
+                <Card className="glass p-6 h-full hover:scale-105 transition-all duration-300 border-border hover:border-accent">
                   <div className="space-y-4">
+                    {project.image && (
+                      <div className="aspect-video w-full overflow-hidden rounded-lg mb-4">
+                        <img 
+                          src={project.image} 
+                          alt={`${project.title} preview`} 
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
+                    )}
                     <h3 className="text-2xl font-semibold">{project.title}</h3>
                     <p className="text-muted-foreground">{project.description}</p>
                     
@@ -51,7 +62,7 @@ export const Projects = () => {
                       {project.tech.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 text-sm rounded-full bg-white/10 text-white border border-white/20"
+                          className="px-3 py-1 text-sm rounded-full bg-secondary/20 text-foreground border border-border"
                         >
                           {tech}
                         </span>
@@ -61,7 +72,7 @@ export const Projects = () => {
                     <div className="flex gap-3 pt-4">
                       <Button
                         size="sm"
-                        className="bg-white hover:bg-white/90 text-black font-semibold"
+                        className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
                         asChild
                       >
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
