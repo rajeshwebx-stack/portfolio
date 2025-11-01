@@ -23,19 +23,19 @@ export const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center gradient-text">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
             Get In Touch
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="glass p-8 glow-purple">
+            <Card className="glass p-8 glow-white border-white/20">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
                   <Input
                     id="name"
                     placeholder="Your name"
-                    className="bg-background/50 border-border focus:border-accent"
+                    className="bg-background/50 border-white/20 focus:border-white"
                   />
                 </div>
                 
@@ -45,7 +45,7 @@ export const Contact = () => {
                     id="email"
                     type="email"
                     placeholder="your.email@example.com"
-                    className="bg-background/50 border-border focus:border-accent"
+                    className="bg-background/50 border-white/20 focus:border-white"
                   />
                 </div>
                 
@@ -55,13 +55,13 @@ export const Contact = () => {
                     id="message"
                     placeholder="Your message..."
                     rows={5}
-                    className="bg-background/50 border-border focus:border-accent resize-none"
+                    className="bg-background/50 border-white/20 focus:border-white resize-none"
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                  className="w-full bg-white hover:bg-white/90 text-black font-semibold"
                 >
                   Send Message
                 </Button>
@@ -76,9 +76,9 @@ export const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <Card className="glass p-6">
+                <Card className="glass p-6 border-white/20">
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-32 h-32 rounded-full overflow-hidden mb-4 ring-2 ring-accent/20">
+                    <div className="w-32 h-32 rounded-full overflow-hidden mb-4 ring-2 ring-white/20">
                       <img 
                         src={profileImage} 
                         alt="Rajesh - Software Developer" 
@@ -98,16 +98,16 @@ export const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                <Card className="glass p-6">
+                <Card className="glass p-6 border-white/20">
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 rounded-full bg-accent/10">
-                      <Mail className="w-6 h-6 text-accent" />
+                    <div className="p-3 rounded-full bg-white/10">
+                      <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
                       <a 
                         href="mailto:rajeshwebx@gmail.com"
-                        className="text-muted-foreground hover:text-accent transition-colors"
+                        className="text-muted-foreground hover:text-white transition-colors"
                       >
                         rajeshwebx@gmail.com
                       </a>
@@ -123,10 +123,10 @@ export const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                <Card className="glass p-6">
+                <Card className="glass p-6 border-white/20">
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 rounded-full bg-accent/10">
-                      <Linkedin className="w-6 h-6 text-accent" />
+                    <div className="p-3 rounded-full bg-white/10">
+                      <Linkedin className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">LinkedIn</h3>
@@ -134,7 +134,7 @@ export const Contact = () => {
                         href="https://www.linkedin.com/in/rajesh-a-521bb2337/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-accent transition-colors"
+                        className="text-muted-foreground hover:text-white transition-colors"
                       >
                         linkedin.com/in/rajesh-a
                       </a>
@@ -150,10 +150,10 @@ export const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
-                <Card className="glass p-6">
+                <Card className="glass p-6 border-white/20">
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 rounded-full bg-accent/10">
-                      <Github className="w-6 h-6 text-accent" />
+                    <div className="p-3 rounded-full bg-white/10">
+                      <Github className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">GitHub</h3>
@@ -161,7 +161,7 @@ export const Contact = () => {
                         href="https://github.com/rajshub00"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-accent transition-colors"
+                        className="text-muted-foreground hover:text-white transition-colors"
                       >
                         github.com/rajshub00
                       </a>

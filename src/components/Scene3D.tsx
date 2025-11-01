@@ -82,20 +82,20 @@ const Scene = () => {
     shape: 'box' | 'sphere' | 'torus' | 'octahedron';
     color: string;
   }> = [
-    { position: [-4, 3, -8], shape: 'box', color: '#8b7fff' },
-    { position: [4, -2, -10], shape: 'sphere', color: '#6ee7b7' },
-    { position: [0, 4, -12], shape: 'torus', color: '#a78bfa' },
-    { position: [-5, -3, -9], shape: 'octahedron', color: '#5eead4' },
-    { position: [5, 2, -11], shape: 'box', color: '#8b7fff' },
-    { position: [-3, -4, -13], shape: 'sphere', color: '#6ee7b7' },
-    { position: [3, 5, -7], shape: 'torus', color: '#a78bfa' },
+    { position: [-4, 3, -8], shape: 'box', color: '#ffffff' },
+    { position: [4, -2, -10], shape: 'sphere', color: '#cccccc' },
+    { position: [0, 4, -12], shape: 'torus', color: '#ffffff' },
+    { position: [-5, -3, -9], shape: 'octahedron', color: '#e5e5e5' },
+    { position: [5, 2, -11], shape: 'box', color: '#d4d4d4' },
+    { position: [-3, -4, -13], shape: 'sphere', color: '#ffffff' },
+    { position: [3, 5, -7], shape: 'torus', color: '#cccccc' },
   ];
 
   return (
     <>
       <ambientLight intensity={0.3} />
-      <pointLight position={[10, 10, 10]} intensity={1} color="#8b7fff" />
-      <pointLight position={[-10, -10, -10]} intensity={0.8} color="#6ee7b7" />
+      <pointLight position={[10, 10, 10]} intensity={1} color="#ffffff" />
+      <pointLight position={[-10, -10, -10]} intensity={0.8} color="#e5e5e5" />
       
       {shapes.map((shape, index) => (
         <FloatingShape
@@ -113,8 +113,8 @@ const Scene = () => {
 
 export const Scene3D = () => {
   return (
-    <div className="fixed inset-0 -z-10 gradient-bg">
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-accent/5 to-accent-secondary/5" />
+    <div className="fixed inset-0 -z-10 bg-black">
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-white/5" />
       <Canvas camera={{ position: [0, 0, 8], fov: 75 }}>
         <Scene />
       </Canvas>

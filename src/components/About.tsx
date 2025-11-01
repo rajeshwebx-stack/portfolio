@@ -11,11 +11,11 @@ export const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center gradient-text">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
             About Me
           </h2>
           
-          <Card className="glass p-8 md:p-12 glow-purple">
+          <Card className="glass p-8 md:p-12 glow-white border-white/20">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I'm a passionate web developer specializing in creating beautiful, 

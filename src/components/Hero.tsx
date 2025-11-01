@@ -16,7 +16,7 @@ export const Hero = () => {
             className="text-center lg:text-left"
           >
             <motion.h1 
-              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 gradient-text"
+              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
@@ -25,7 +25,7 @@ export const Hero = () => {
             </motion.h1>
             
             <motion.p
-              className="text-lg md:text-xl text-accent mb-4 font-medium"
+              className="text-lg md:text-xl text-white mb-4 font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -50,7 +50,7 @@ export const Hero = () => {
             >
               <Button 
                 size="lg" 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground glow-purple hover:scale-105 transition-transform"
+                className="bg-white hover:bg-white/90 text-black font-semibold glow-white hover:scale-105 transition-transform"
                 asChild
               >
                 <a href="#projects">View Work</a>
@@ -58,7 +58,7 @@ export const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-accent text-foreground hover:bg-accent/10"
+                className="border-white text-white hover:bg-white/10"
                 asChild
               >
                 <a href="#contact">Get in Touch</a>
@@ -75,7 +75,7 @@ export const Hero = () => {
                 href="https://github.com/rajshub00" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-accent transition-colors"
+                className="text-muted-foreground hover:text-white transition-colors"
               >
                 <Github className="w-6 h-6" />
               </a>
@@ -83,13 +83,13 @@ export const Hero = () => {
                 href="https://www.linkedin.com/in/rajesh-a-521bb2337/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-accent transition-colors"
+                className="text-muted-foreground hover:text-white transition-colors"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a 
                 href="mailto:rajeshwebx@gmail.com"
-                className="text-muted-foreground hover:text-accent transition-colors"
+                className="text-muted-foreground hover:text-white transition-colors"
               >
                 <Mail className="w-6 h-6" />
               </a>
@@ -105,11 +105,11 @@ export const Hero = () => {
           >
             <div className="relative w-full max-w-md aspect-square">
               {/* 3D Frame Effect */}
-              <div className="absolute inset-0 glass rounded-2xl glow-purple transform rotate-3 transition-transform hover:rotate-6" />
-              <div className="absolute inset-0 glass rounded-2xl glow-teal transform -rotate-3 transition-transform hover:-rotate-6" />
+              <div className="absolute inset-0 glass rounded-2xl glow-white transform rotate-3 transition-transform hover:rotate-6 border-white/20" />
+              <div className="absolute inset-0 glass rounded-2xl glow-subtle transform -rotate-3 transition-transform hover:-rotate-6 border-white/20" />
               
               {/* Main Image Container */}
-              <div className="relative glass rounded-2xl overflow-hidden h-full flex items-center justify-center backdrop-blur-xl">
+              <div className="relative glass rounded-2xl overflow-hidden h-full flex items-center justify-center backdrop-blur-xl border-white/20">
                 <img 
                   src={profileImage} 
                   alt="Rajesh - Software Developer" 
@@ -129,7 +129,7 @@ export const Hero = () => {
             y: { duration: 2, repeat: Infinity, ease: "easeInOut" }
           }}
         >
-          <ArrowDown className="w-6 h-6 text-accent" />
+          <ArrowDown className="w-6 h-6 text-white" />
         </motion.div>
       </div>
     </section>

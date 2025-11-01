@@ -59,7 +59,7 @@ export const Header = () => {
           {/* Logo */}
           <motion.a
             href="#"
-            className="text-2xl font-bold gradient-text"
+            className="text-2xl font-bold text-white"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -78,15 +78,15 @@ export const Header = () => {
                 }}
                 className={`relative text-sm font-medium transition-colors nav-link ${
                   activeSection === link.href.substring(1)
-                    ? 'text-accent'
-                    : 'text-foreground hover:text-accent'
+                    ? 'text-white'
+                    : 'text-foreground hover:text-white'
                 }`}
                 whileHover={{ y: -2 }}
               >
                 {link.name}
                 {activeSection === link.href.substring(1) && (
                   <motion.span
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-accent to-accent-secondary"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-white"
                     layoutId="activeSection"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
@@ -127,8 +127,8 @@ export const Header = () => {
                     }}
                     className={`text-lg font-medium transition-colors ${
                       activeSection === link.href.substring(1)
-                        ? 'text-accent'
-                        : 'text-foreground hover:text-accent'
+                        ? 'text-white'
+                        : 'text-foreground hover:text-white'
                     }`}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}

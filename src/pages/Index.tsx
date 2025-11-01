@@ -17,7 +17,7 @@ const Index = () => {
       <Projects />
       <Contact />
       
-      <footer className="py-8 text-center text-muted-foreground border-t border-border">
+      <footer className="py-8 text-center text-muted-foreground border-t border-white/20">
         <p>&copy; 2024 Creative Developer. Built with React & Framer Motion</p>
       </footer>
     </div>

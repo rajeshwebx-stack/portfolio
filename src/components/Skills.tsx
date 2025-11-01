@@ -45,7 +45,7 @@ export const Skills = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center gradient-text">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
             Skills & Expertise
           </h2>
           
@@ -59,10 +59,10 @@ export const Skills = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
               >
-                <Card className="glass p-6 h-full hover:glow-purple hover:scale-105 transition-all duration-300">
+                <Card className="glass p-6 h-full hover:glow-white hover:scale-105 transition-all duration-300 border-white/20">
                   <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="p-4 rounded-full bg-accent/10">
-                      <skill.icon className="w-8 h-8 text-accent" />
+                    <div className="p-4 rounded-full bg-white/10">
+                      <skill.icon className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold">{skill.title}</h3>
                     <p className="text-muted-foreground">{skill.description}</p>
