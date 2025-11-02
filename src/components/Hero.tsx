@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profileImage from '@/assets/profile.png';
+import heroImage from '@/assets/hero-image.png';
 
 export const Hero = () => {
   return (
@@ -111,7 +111,7 @@ export const Hero = () => {
               {/* Main Image Container */}
               <div className="relative glass rounded-2xl overflow-hidden h-full flex items-center justify-center backdrop-blur-xl border-border">
                 <img 
-                  src={profileImage} 
+                  src={heroImage} 
                   alt="Rajesh - Software Developer" 
                   className="w-full h-full object-cover"
                 />

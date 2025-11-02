@@ -18,23 +18,24 @@ export const About = () => {
           <Card className="glass p-8 md:p-12 glow-white border-white/20">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate web developer specializing in creating beautiful, 
-                performant, and user-friendly digital experiences. With expertise in 
-                modern web technologies, I bring ideas to life through clean code and 
-                creative problem-solving.
+                I'm a 3rd-year IT student specializing in full-stack web development, passionate about 
+                building scalable and user-centric applications. With a strong foundation in both 
+                frontend and backend technologies, I create seamless digital experiences from concept 
+                to deployment.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My journey in web development has led me to master React, Three.js, 
-                and the latest frontend technologies. I love experimenting with 3D 
-                graphics, animations, and interactive elements to create memorable 
-                user experiences.
+                My technical expertise spans modern frameworks like React, Node.js, and Express, 
+                along with database management using SQL and MongoDB. I'm proficient in REST API 
+                development, authentication systems, and responsive UI design using Tailwind CSS 
+                and modern JavaScript/TypeScript.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new web technologies, 
-                contributing to open-source projects, or sharing knowledge with the 
-                developer community.
+                Beyond coursework, I actively work on personal projects that solve real-world problems, 
+                continuously expanding my skill set in areas like cloud deployment, version control with 
+                Git, and agile development practices. I'm always eager to learn emerging technologies 
+                and collaborate on innovative solutions.
               </p>
             </div>
           </Card>

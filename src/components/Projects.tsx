@@ -2,21 +2,39 @@ import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
-import professionalPhoto from '@/assets/professional-photo.jpg';
+import xoStoreImage from '@/assets/project-xo-store.jpg';
+import bmiImage from '@/assets/project-bmi.jpg';
+import weatherImage from '@/assets/project-weather.jpg';
+import todoImage from '@/assets/project-todo.jpg';
 
 const projects = [
   {
     title: 'XO Store Clone',
-    description: 'A fully functional e-commerce store clone with modern UI and seamless shopping experience.',
+    description: 'A fully functional e-commerce store clone featuring modern UI design, product catalog, and seamless shopping cart functionality.',
     tech: ['React', 'CSS', 'JavaScript'],
     link: 'https://xo-store-clone.netlify.app/',
-    image: professionalPhoto,
+    image: xoStoreImage,
   },
   {
     title: 'BMI Calculator',
-    description: 'Interactive BMI calculator with real-time results and health recommendations.',
+    description: 'Interactive health tracking application that calculates Body Mass Index with real-time results and personalized health recommendations.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://rajshub00.github.io/BMI-Track/',
+    image: bmiImage,
+  },
+  {
+    title: 'Weather App',
+    description: 'Real-time weather forecast application displaying current conditions, 5-day predictions, and location-based weather data with intuitive UI.',
+    tech: ['React', 'API', 'CSS'],
+    link: '#',
+    image: weatherImage,
+  },
+  {
+    title: 'Task Manager',
+    description: 'Productivity-focused to-do list application with task organization, completion tracking, and clean interface for efficient task management.',
+    tech: ['JavaScript', 'LocalStorage', 'CSS'],
+    link: '#',
+    image: todoImage,
   },
 ];
 
