@@ -12,6 +12,10 @@ All colors MUST be HSL.
     --background: 0 0% 0%;
     --foreground: 38 78% 91%; /* Light cream #fdf0d5 */
 
+    /* Heading colors - subtle gray tones */
+    --heading: 0 0% 75%; /* Light gray for headings #bfbfbf */
+    --heading-hover: 351 83% 43%; /* Red accent on hover */
+
     /* High contrast cards */
     --card: 0 0% 5%;
     --card-foreground: 38 78% 91%;
@@ -113,6 +117,12 @@ All colors MUST be HSL.
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 700;
+    color: hsl(var(--heading));
+    transition: color 0.3s ease;
+  }
+
+  h1:hover, h2:hover, h3:hover {
+    color: hsl(var(--heading-hover));
   }
 
   /* Glassmorphism utility */
