@@ -100,6 +100,38 @@ All colors MUST be HSL.
     --sidebar-border: 0 0% 20%;
     --sidebar-ring: 0 0% 100%;
   }
+
+  .light {
+    --background: 38 78% 91%;
+    --foreground: 0 0% 0%;
+    --heading: 0 0% 25%;
+    --heading-hover: 351 83% 43%;
+    --card: 44 19% 94%;
+    --card-foreground: 0 0% 0%;
+    --popover: 44 19% 94%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 351 83% 43%;
+    --primary-foreground: 38 78% 91%;
+    --secondary: 44 14% 84%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 44 14% 84%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 33 60% 61%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 351 83% 43%;
+    --destructive-foreground: 38 78% 91%;
+    --border: 0 0% 80%;
+    --input: 44 19% 94%;
+    --ring: 351 83% 43%;
+    --sidebar-background: 38 78% 91%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 44 19% 94%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 44 14% 84%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 80%;
+    --sidebar-ring: 0 0% 0%;
+  }
 }
 
 @layer base {
@@ -211,5 +243,65 @@ All colors MUST be HSL.
 
   ::-webkit-scrollbar-thumb:hover {
     background: hsl(var(--accent-secondary));
+  }
+
+  /* Hide default cursor */
+  * {
+    cursor: none !important;
+  }
+
+  /* Custom Cursor Styles */
+  .custom-cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: hsl(var(--primary));
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+    mix-blend-mode: difference;
+  }
+
+  .custom-cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border: 2px solid hsl(var(--primary));
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+    mix-blend-mode: difference;
+  }
+
+  .custom-cursor-ring.hovering {
+    width: 48px;
+    height: 48px;
+    border-color: hsl(var(--accent));
+  }
+
+  /* Animated gradient for text */
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% auto;
+    animation: gradient 3s linear infinite;
   }
 }

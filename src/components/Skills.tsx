@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Code2, Palette, Rocket, Database, Globe, Zap } from 'lucide-react';
+import { SkillsProgress } from './SkillsProgress';
 
 const skills = [
   {
@@ -49,7 +50,7 @@ export const Skills = () => {
             Skills & Expertise
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.title}
@@ -57,12 +58,12 @@ export const Skills = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -10, transition: { duration: 0.2 } }}
+                whileHover={{ y: -10, scale: 1.05, transition: { duration: 0.2 } }}
               >
-                <Card className="glass p-6 h-full hover:glow-white hover:scale-105 transition-all duration-300 border-white/20">
+                <Card className="glass p-6 h-full hover:glow-white transition-all duration-300 border-border hover:border-primary hover:shadow-2xl">
                   <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="p-4 rounded-full bg-white/10">
-                      <skill.icon className="w-8 h-8 text-white" />
+                    <div className="p-4 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors duration-300">
+                      <skill.icon className="w-8 h-8 text-primary" />
                     </div>
                     <h3 className="text-xl font-semibold">{skill.title}</h3>
                     <p className="text-muted-foreground">{skill.description}</p>
@@ -70,6 +71,11 @@ export const Skills = () => {
                 </Card>
               </motion.div>
             ))}
+          </div>
+
+          {/* Skills Progress Section */}
+          <div className="mt-16">
+            <SkillsProgress />
           </div>
         </motion.div>
       </div>
