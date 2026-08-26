@@ -321,12 +321,12 @@ export const Contact = () => {
                   </div>
                   <h3 className="font-semibold">GitHub</h3>
                   <a 
-                    href="https://github.com/rajeshwebstack"
+                    href="https://github.com/rajeshwebx-stack"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors text-sm"
                   >
-                    github.com/rajeshwebstack
+                    github.com/rajeshwebx-stack
                   </a>
                 </VStack>
               </Card>

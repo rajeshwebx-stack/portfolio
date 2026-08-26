@@ -62,12 +62,13 @@ export const Header = () => {
           {/* Logo with enhanced hover */}
           <motion.button
             onClick={() => scrollToSection('#hero')}
-            className="text-2xl font-bold tracking-wider text-foreground relative group"
+            className="flex items-center gap-3 text-2xl font-bold tracking-wider text-foreground relative group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
+            <img src="/logo.png" alt="R Logo" className="w-8 h-8 rounded-full shadow-md glow-subtle object-cover" />
             <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
-              PORTFOLIO
+              RAJESH <span className="text-primary text-sm font-semibold tracking-normal">WEBx</span>
             </span>
             <motion.div
               className="absolute inset-0 bg-primary/10 rounded-lg -z-10 opacity-0 group-hover:opacity-100"

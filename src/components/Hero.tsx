@@ -77,7 +77,7 @@ export const Hero = () => {
               transition={{ duration: 0.8, delay: 0.7 }}
             >
               <a
-                href="https://github.com/rajeshwebstack"
+                href="https://github.com/rajeshwebx-stack"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition-colors"
