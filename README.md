@@ -23,6 +23,7 @@
 - **📱 Strict Design System:** Container-wrapped pages, fluid responsive layouts, and zero arbitrary pixel margins using Tailwind standard spacing scales (`VStack`, `HStack`, `Container`).
 - **🧠 Featured Projects:**
   - **[InterviewerAI](https://github.com/rajeshwebx-stack/recruiter-ai):** Voice-enabled AI Mock Interview platform powered by Groq Whisper & LLaMA 3.3.
+  - **[CricZone Arena — Turf Management](https://github.com/rajeshwebx-stack/turf-management):** Premium sports turf booking web app with cosmic canvas starfields, dynamic scheduler, and database persistence.
   - **[Cyber-RPG Skill Tree](https://github.com/rajeshwebx-stack/rajesh-skill-tree):** Spatial node-graph resume portfolio built with `@xyflow/react`.
   - **XO Store Clone:** Modern e-commerce storefront.
   - **BMI Calculator:** Interactive health tracking web tool.

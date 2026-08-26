@@ -9,6 +9,7 @@ import { VStack, HStack } from '@/components/ui/stack';
 
 import skillTreeImage from '@/assets/project-skill-tree.jpg';
 import aiInterviewImage from '@/assets/project-ai-interview.jpg';
+import turfImage from '@/assets/project-turf-management.jpg';
 import xoStoreImage from '@/assets/project-xo-store.jpg';
 import bmiImage from '@/assets/project-bmi.jpg';
 
@@ -20,6 +21,16 @@ const projects = [
     link: 'https://github.com/rajeshwebx-stack/recruiter-ai',
     github: 'https://github.com/rajeshwebx-stack/recruiter-ai',
     image: aiInterviewImage,
+    category: 'Full-Stack',
+    difficulty: 'Advanced',
+  },
+  {
+    title: 'CricZone Arena — Turf Booking & Management',
+    description: 'Premium sports turf booking platform featuring cosmic starfield canvas animations, interactive 12-column bento grids, dynamic real-time slot reservation scheduler, and database persistence.',
+    tech: ['React 19', 'Tailwind CSS v4', 'Framer Motion', 'Supabase', 'Vite'],
+    link: 'https://github.com/rajeshwebx-stack/turf-management',
+    github: 'https://github.com/rajeshwebx-stack/turf-management',
+    image: turfImage,
     category: 'Full-Stack',
     difficulty: 'Advanced',
   },
