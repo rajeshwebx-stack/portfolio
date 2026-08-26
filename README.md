@@ -11,7 +11,7 @@
 
 **An immersive 3D personal portfolio featuring cosmic particle canvases, interactive project showcases, live Web3Forms contact integration, and modern glassmorphism design.**
 
-[🌐 Live Website](https://cosmic-canvas-dev-44.vercel.app) · [🐙 GitHub Profile](https://github.com/rajeshwebx-stack) · [💼 LinkedIn](https://www.linkedin.com/in/rajesh-a-521bb2337/) · [✉️ Email](mailto:rajeshwebx@gmail.com)
+[🌐 Live Website](https://rajeshportfolio.vercel.app) · [🐙 GitHub Profile](https://github.com/rajeshwebx-stack) · [💼 LinkedIn](https://www.linkedin.com/in/rajesh-a-521bb2337/) · [✉️ Email](mailto:rajeshwebx@gmail.com)
 
 </div>
 
