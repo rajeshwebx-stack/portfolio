@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# 🌌 Rajesh A — Full-Stack & Creative Developer Portfolio
 
-## Project info
+<div align="center">
 
-**URL**: https://lovable.dev/projects/bc3d7f43-5800-45c6-8da5-0b11c97a124a
+![Portfolio Banner](https://img.shields.io/badge/RAJESH_WEBx-PORTFOLIO_v2.0-8b5cf6?style=for-the-badge&logo=react&logoColor=white)
+![React 18](https://img.shields.io/badge/React-18.3.1-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-0.160-000000?style=for-the-badge&logo=three.js&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.17-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-## How can I edit this code?
+**An immersive 3D personal portfolio featuring cosmic particle canvases, interactive project showcases, live Web3Forms contact integration, and modern glassmorphism design.**
 
-There are several ways of editing your application.
+[🌐 Live Preview](#) · [🐙 GitHub Profile](https://github.com/rajeshwebx-stack) · [💼 LinkedIn](https://www.linkedin.com/in/rajesh-a-521bb2337/) · [✉️ Email](mailto:rajeshwebx@gmail.com)
 
-**Use Lovable**
+</div>
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bc3d7f43-5800-45c6-8da5-0b11c97a124a) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ⚡ Highlights & Architecture
 
-**Use your preferred IDE**
+- **🌌 Immersive 3D Starfield & Floating Shapes:** Built with `@react-three/fiber` & `@react-three/drei` for interactive cosmic depth.
+- **📱 Strict Design System:** Container-wrapped pages, fluid responsive layouts, and zero arbitrary pixel margins using Tailwind standard spacing scales (`VStack`, `HStack`, `Container`).
+- **🧠 Featured Projects:**
+  - **[InterviewerAI](https://github.com/rajeshwebx-stack/recruiter-ai):** Voice-enabled AI Mock Interview platform powered by Groq Whisper & LLaMA 3.3.
+  - **[Cyber-RPG Skill Tree](https://github.com/rajeshwebx-stack/rajesh-skill-tree):** Spatial node-graph resume portfolio built with `@xyflow/react`.
+  - **XO Store Clone:** Modern e-commerce storefront.
+  - **BMI Calculator:** Interactive health tracking web tool.
+- **📬 Working Contact Form:** Integrated with **Web3Forms** for instant direct email notifications to `rajeshwebx@gmail.com`.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+- **Frontend:** React 18, TypeScript, Vite
+- **3D & Animation:** Three.js, React Three Fiber, Framer Motion
+- **Styling:** Tailwind CSS, Radix UI Primitives, Lucide Icons
+- **Communication:** Web3Forms API
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Getting Started Locally
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clone the repository
+git clone https://github.com/rajeshwebx-stack/portfolio.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Navigate into the project folder
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the local development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 👤 Author
 
-**Use GitHub Codespaces**
+**Rajesh A (WEBx)**
+- **GitHub:** [@rajeshwebx-stack](https://github.com/rajeshwebx-stack)
+- **LinkedIn:** [Rajesh A](https://www.linkedin.com/in/rajesh-a-521bb2337/)
+- **Email:** [rajeshwebx@gmail.com](mailto:rajeshwebx@gmail.com)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bc3d7f43-5800-45c6-8da5-0b11c97a124a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+&copy; 2026 Rajesh A. All rights reserved.
