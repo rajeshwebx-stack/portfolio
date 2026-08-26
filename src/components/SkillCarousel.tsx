@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 
-const skills = ['React', 'Tailwind CSS', 'JavaScript', 'Java', 'Python', 'AWS', 'Node.js', 'Express', 'MongoDB', 'SQL', 'TypeScript', 'Git'];
+const skills = [
+  'HTML', 'CSS', 'JavaScript', 'React', 'TypeScript',
+  'REST API', 'MongoDB', 'MySQL',
+  'Git', 'npm', 'VS Code',
+];
 
 export const SkillCarousel = () => {
   return (

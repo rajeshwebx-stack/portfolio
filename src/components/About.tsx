@@ -36,24 +36,21 @@ export const About = () => {
           <Card className="glass p-8 md:p-12 glow-white border-border hover:border-primary transition-all duration-300 mb-12">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a 3rd-year IT student specializing in full-stack web development, passionate about 
-                building scalable and user-centric applications. With a strong foundation in both 
-                frontend and backend technologies, I create seamless digital experiences from concept 
-                to deployment.
+                I'm a 3rd-year IT student with a strong passion for frontend development. 
+                I build modern, responsive web interfaces using <strong className="text-foreground">HTML</strong>, <strong className="text-foreground">CSS</strong>, and <strong className="text-foreground">JavaScript</strong>, 
+                and I love crafting dynamic, component-driven UIs with <strong className="text-foreground">React</strong> and <strong className="text-foreground">TypeScript</strong>.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My technical expertise spans modern frameworks like React, Node.js, and Express, 
-                along with database management using SQL and MongoDB. I'm proficient in REST API 
-                development, authentication systems, and responsive UI design using Tailwind CSS 
-                and modern JavaScript/TypeScript.
+                On the backend, I design and build <strong className="text-foreground">REST APIs</strong> and work with databases like 
+                <strong className="text-foreground"> MongoDB</strong> and <strong className="text-foreground">MySQL</strong> to create scalable, data-driven applications. 
+                I'm comfortable handling full data flow from client to server to database.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Beyond coursework, I actively work on personal projects that solve real-world problems, 
-                continuously expanding my skill set in areas like cloud deployment, version control with 
-                Git, and agile development practices. I'm always eager to learn emerging technologies 
-                and collaborate on innovative solutions.
+                I rely on industry-standard tools including <strong className="text-foreground">Git</strong> for version control, 
+                <strong className="text-foreground"> npm</strong> for package management, and <strong className="text-foreground">VS Code</strong> as my primary development environment. 
+                I'm always eager to build real-world projects and grow as a developer.
               </p>
             </div>
           </Card>

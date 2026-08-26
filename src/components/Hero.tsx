@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-image.png';
+import heroImage from '@/assets/hero-portrait.png';
 
 export const Hero = () => {
   return (
@@ -15,31 +15,36 @@ export const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left"
           >
-            <motion.h1 
-              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
+            {/* Name branding */}
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.2 }}
+              transition={{ duration: 1, delay: 0.1 }}
             >
-              Creative Developer
-            </motion.h1>
-            
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-2 leading-none tracking-tight">
+                RAJESH
+              </h1>
+              <div className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient">
+                WEBx
+              </div>
+            </motion.div>
+
             <motion.p
-              className="text-lg md:text-xl text-foreground mb-4 font-medium"
+              className="text-lg md:text-xl text-foreground mb-2 font-semibold uppercase tracking-widest"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Software Developer
+              Frontend &amp; Backend Developer
             </motion.p>
-            
+
             <motion.p
               className="text-base md:text-lg text-muted-foreground mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Building immersive digital experiences with modern web technologies
+              Crafting modern web experiences with React, TypeScript &amp; clean REST APIs
             </motion.p>
 
             <motion.div
@@ -48,15 +53,15 @@ export const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-white hover:scale-105 transition-transform"
                 asChild
               >
                 <a href="#projects">View Work</a>
               </Button>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="outline"
                 className="border-border hover:bg-accent hover:text-accent-foreground"
                 asChild
@@ -71,23 +76,23 @@ export const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              <a 
-                href="https://github.com/rajshub00" 
-                target="_blank" 
+              <a
+                href="https://github.com/rajeshwebstack"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition-colors"
               >
                 <Github className="w-6 h-6" />
               </a>
-              <a 
-                href="https://www.linkedin.com/in/rajesh-a-521bb2337/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/rajesh-a-521bb2337/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition-colors"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a 
+              <a
                 href="mailto:rajeshwebx@gmail.com"
                 className="text-muted-foreground hover:text-accent transition-colors"
               >
@@ -96,7 +101,7 @@ export const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right side - Profile image placeholder */}
+          {/* Right side - Profile image */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -107,13 +112,13 @@ export const Hero = () => {
               {/* 3D Frame Effect */}
               <div className="absolute inset-0 glass rounded-2xl glow-white transform rotate-3 transition-transform hover:rotate-6 border-border" />
               <div className="absolute inset-0 glass rounded-2xl glow-subtle transform -rotate-3 transition-transform hover:-rotate-6 border-border" />
-              
+
               {/* Main Image Container */}
               <div className="relative glass rounded-2xl overflow-hidden h-full flex items-center justify-center backdrop-blur-xl border-border">
-                <img 
-                  src={heroImage} 
-                  alt="Rajesh - Software Developer" 
-                  className="w-full h-full object-cover"
+                <img
+                  src={heroImage}
+                  alt="Rajesh — Frontend & Backend Developer"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
@@ -124,7 +129,7 @@ export const Hero = () => {
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, y: [0, 10, 0] }}
-          transition={{ 
+          transition={{
             opacity: { duration: 1, delay: 1 },
             y: { duration: 2, repeat: Infinity, ease: "easeInOut" }
           }}

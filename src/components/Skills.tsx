@@ -1,38 +1,23 @@
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
-import { Code2, Palette, Rocket, Database, Globe, Zap } from 'lucide-react';
+import { Code2, Server, Wrench } from 'lucide-react';
 import { SkillsProgress } from './SkillsProgress';
 
 const skills = [
   {
     icon: Code2,
     title: 'Frontend Development',
-    description: 'React, TypeScript, Next.js',
+    description: 'HTML · CSS · JavaScript · React · TypeScript',
   },
   {
-    icon: Palette,
-    title: '3D & Animation',
-    description: 'Three.js, Framer Motion, GSAP',
+    icon: Server,
+    title: 'Backend Development',
+    description: 'REST API · MongoDB · MySQL',
   },
   {
-    icon: Rocket,
-    title: 'Performance',
-    description: 'Optimization, Web Vitals',
-  },
-  {
-    icon: Database,
-    title: 'Backend',
-    description: 'Node.js, PostgreSQL, APIs',
-  },
-  {
-    icon: Globe,
-    title: 'Web Technologies',
-    description: 'HTML5, CSS3, WebGL',
-  },
-  {
-    icon: Zap,
-    title: 'Modern Tools',
-    description: 'Git, Vite, Tailwind CSS',
+    icon: Wrench,
+    title: 'Tools',
+    description: 'Git · npm · VS Code',
   },
 ];
 
@@ -47,10 +32,10 @@ export const Skills = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            Skills & Expertise
+            Skills &amp; Expertise
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.title}

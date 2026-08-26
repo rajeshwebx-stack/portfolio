@@ -2,14 +2,20 @@ import { motion } from 'framer-motion';
 import { Progress } from '@/components/ui/progress';
 
 const skills = [
-  { name: 'React & TypeScript', level: 85 },
-  { name: 'Tailwind CSS', level: 90 },
-  { name: 'JavaScript', level: 88 },
-  { name: 'Node.js & Express', level: 80 },
-  { name: 'Java', level: 75 },
-  { name: 'Python', level: 70 },
-  { name: 'SQL & MongoDB', level: 78 },
-  { name: 'AWS & Cloud', level: 65 },
+  // Frontend
+  { name: 'HTML', level: 92 },
+  { name: 'CSS', level: 88 },
+  { name: 'JavaScript', level: 85 },
+  { name: 'React', level: 83 },
+  { name: 'TypeScript', level: 78 },
+  // Backend
+  { name: 'REST API', level: 80 },
+  { name: 'MongoDB', level: 75 },
+  { name: 'MySQL', level: 72 },
+  // Tools
+  { name: 'Git', level: 85 },
+  { name: 'npm', level: 80 },
+  { name: 'VS Code', level: 90 },
 ];
 
 export const SkillsProgress = () => {
@@ -22,7 +28,7 @@ export const SkillsProgress = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
+          transition={{ duration: 0.5, delay: index * 0.07 }}
           className="space-y-2"
         >
           <div className="flex justify-between items-center">
